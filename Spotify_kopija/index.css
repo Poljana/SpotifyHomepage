@@ -1,0 +1,656 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root
+{
+    --zelena: rgb(29,185,84);
+    --spotify-crna: rgb(18,18,18);
+    --tamno-siva: rgb(33,33,33);
+    --siva: rgb(83,83,83);
+    --svjetlo-siva: rgb(179,179,179);
+}
+
+body
+{
+    font-family: 'Varela Round', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    background-color: black;
+    color: var(--svjetlo-siva);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.container
+{
+    width: 98.5vw;
+    height: 98.3vh;
+    display: flex;
+    gap: 7px;
+}
+
+.subcontainer
+{
+    display: flex;
+    height: 100%;
+    width: 320px;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    /* position: fixed; */
+}
+
+/* CONTAINER 1 */
+
+.container1
+{
+    display: flex;
+    height: 160px;
+    width: 320px;
+    background-color: var(--spotify-crna);
+    border-radius: 7px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 10px;
+}
+
+.container1 ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 20px;
+    padding: 0;
+}
+
+.container1 ul li
+{
+    display: flex;
+    width: 280px;
+    height: 50px;
+    justify-content: start;
+    align-items: center;
+}
+
+.icon-size1
+{
+    font-size: 25px;
+}
+
+.container1 a
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--svjetlo-siva);
+    text-decoration: none;
+    gap: 20px;
+    width: 280px;
+    height: 40px;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+#spotify-logo
+{
+    gap: 5px;
+    width: fit-content;
+    color: white;
+}
+
+/* .item1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 10px;
+    width: 115px;
+}
+
+.item2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 10px;
+    width: 120px;
+}
+
+.item3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 10px;
+    width: 120px;
+} */
+
+
+
+/* CONTAINER 2 */
+
+.container2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1;
+    min-height: 350px;
+    width: 320px;
+    background-color: var(--spotify-crna);
+    border-radius: 7px;
+    font-size: 12px;
+    gap: 25px;
+}
+
+.library-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    height: 50px;
+}
+
+.library-section ul
+{
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 140px;
+}
+
+.library-section ul li
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.library-section ul li a
+{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--svjetlo-siva);
+    text-decoration: none;
+    gap: 10px;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.library-section ul li a.icon-size2
+{
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+}
+
+a.lightup:hover
+{
+    color: white;
+}
+
+a.classadd:hover
+{
+    color: lightgray;
+    background-color: var(--tamno-siva);
+    border-radius: 50px;
+}
+
+.subcontainer1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 110px;
+    width: 305px;
+    background-color: var(--tamno-siva);
+    color: white;
+    font-size: 10px;
+    border-radius: 7px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 2px;
+}
+
+.subcontainer1 p.small-title
+{
+    font-size: 15px;
+}
+
+.subcontainer1 p
+{
+    font-size: 13px;
+}
+
+.subcontainer1 p,
+a
+{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.subcontainer1 a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    border-radius: 50px;
+    transform: translateY(13px);
+}
+
+.subcontainer1 a.white-link1
+{
+    width: 125px;
+}
+
+.subcontainer1 a.white-link2
+{
+    width: 145px;
+}
+
+a.white-link1:hover,
+a.white-link2:hover
+{
+    transform: scale(1.05) translateY(12px);
+}
+
+.footlinks
+{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: absolute;
+    bottom: 15px;
+    margin-left: 20px;
+    background-color: var(--spotify-crna);
+    transform: translateX(-10px);
+    height: 150px;
+    width: 310px;
+    padding-top: 50px;
+}
+
+.footlinks a
+{
+    text-decoration: none;
+    color: var(--svjetlo-siva);
+}
+
+.links
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    line-height: 30px;
+    gap: 3px;
+    transform: translateY(-20px);
+}
+
+.language-btn button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    height: 32px;
+    width: 93px;
+    color: white;
+    background-color: transparent;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: var(--siva);
+    transform: translateX(15px) /* translateY(-15px) */;
+    border-style: solid;
+}
+
+.language-btn button:hover
+{
+    transform: scale(1.07) /* translateY(-15px) */ translateX(15px);
+    border-color: white;
+    border-width: 1.5px;
+    cursor: pointer;
+}
+
+.icon-size3
+{
+    font-size: 17px;
+}
+
+
+/* CONTAINER 3 */
+
+.container3
+{
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    background-color: var(--spotify-crna);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(18,18,18,1) 59%, rgba(36,36,36,1) 100%);
+    border-radius: 7px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 12px;
+    /* transform: translateX(327px); */
+    gap: 5px;
+}
+
+.container3 a
+{
+    margin: 0px;
+}
+
+.container3 img
+{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.subcontainer2
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--spotify-crna);
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    font-size: 15px;
+    width: 100%;
+    height: 65px;
+}
+
+
+/* LOGIN SECTION */
+
+.nav-arrow
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--siva);
+    background-color: #0C0C0C;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.arrow-box
+{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+}
+
+.signup
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80px;
+    height: 50px;
+    color: var(--svjetlo-siva);
+}
+
+a.signup:hover
+{
+    color: white;
+    transform: scale(1.05);
+}
+
+.login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 45px;
+    color: var(--spotify-crna);
+    background-color: lightgray;
+    border-radius: 50px;
+}
+
+a.login:hover
+{
+    transform: scale(1.05);
+}
+
+.subcontainer3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-left: 40px;
+}
+
+.top-section
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 65px;
+}
+
+.spotify-playlists
+{
+    font-size: 23px;
+    color: white;
+    position: absolute;
+    left: 370px;
+}
+
+.spotify-playlists:hover
+{
+    text-decoration: underline;
+}
+
+.show-all
+{
+    font-size: 13px;
+    color: var(--svjetlo-siva);
+    position: absolute;
+    right: 30px;
+}
+
+.show-all:hover
+{
+    text-decoration: underline;
+}
+
+
+/* PLAYLISTS SECTION */
+
+.playlist-section
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    gap: 20px;
+}
+
+.playlist-link
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    width: 180px;
+    height: 245px;
+    padding-top: 15px;
+    border-radius: 7px;
+    gap: 10px;
+    transition-property: transform background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+
+.playlist-link:hover
+{
+    background-color: var(--tamno-siva);
+}
+
+.plink-bigtext
+{
+    font-size: 15px;
+    width: 85%;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.plink-smalltext
+{
+    font-size: 13px;
+    width: 85%;
+    color: var(--svjetlo-siva);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* LINKS SECTION */
+
+.container3 ul
+{
+    list-style: none;
+}
+
+.link-section
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 95%;
+    margin-left: -5%;
+}
+
+h3.useful-link
+{
+    color: white;
+    font-size: 15px;
+}
+
+a.useful-link
+{
+    color: var(--svjetlo-siva);
+    font-size: 15px;
+}
+
+a.useful-link:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+
+.section1 ul 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    line-height: 5px;
+}
+
+.section1
+{
+    width: 200px;
+    height: 250px;
+    margin-top: 60px;
+}
+
+.social-links
+{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    font-size: 18px;
+    margin-top: 60px;
+    flex-grow: 1;
+}
+
+.social-links ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-link
+{
+    color: white;
+    background-color: var(--tamno-siva);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.social-link:hover
+{
+    background-color: var(--siva);
+    cursor: default;
+}
+
+.copyright
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    width: 95%;
+    height: 60px;
+    margin-left: -5px;
+    border-top: 1 solid var(--siva);
+}
